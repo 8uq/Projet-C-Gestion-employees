@@ -53,7 +53,7 @@ int main()
                     if(strcmp(string,"President")==0 || strcmp(string,"VP-Sales")==0 || strcmp(string,"VP-Marketing")==0 || strcmp(string,"Sales-Manager")==0 ||strcmp(string,"Sales-Rep")==0){
                         break;}
                 }
-                printf("Salaire ");
+                printf("Salaire: ");
                 scanf("%f",&salaire);
                 ajouteEmploye(nom,prenom,day,month,year,titrePoste,salaire,listEmployes);
                 break;

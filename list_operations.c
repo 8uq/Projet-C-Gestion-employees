@@ -9,8 +9,12 @@ struct liste* initListe() {
     return ListeEmployes;
 };
 
+int isEmpty(struct liste *list){
+    return list->head==NULL;
+}
+
 void addToListe(struct liste *listEmployes, struct employe *nouveauEmploye) {
-    if (listEmployes->head == NULL) {
+    if (isEmpty(listEmployes)) {
         listEmployes->head = nouveauEmploye;
     } else {
         struct employe* it = listEmployes->head;

@@ -12,4 +12,5 @@ void chercheParPrenom(struct liste *ListeEmployes, char *prenom);
 void updateEmploye(struct liste *ListeEmployes, struct employe *emp);
 void afficherList(struct liste *listEmployes);
 
+int isEmpty(struct liste *list);
 #endif
